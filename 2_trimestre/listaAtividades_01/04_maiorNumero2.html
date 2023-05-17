@@ -3,9 +3,25 @@
     //Peça ao usuário para informar três números e diga, ao final do programa, qual dos três é o maior número.
 
     //ENTRADA
-
+    const n1 = Number (prompt (`informe um numero inteiro`));
+    const n2 = Number ( prompt(`informe outro número diferente do primeiro`));
+    const n3 = Number ( prompt (`informe outro número diferente do primeiro e do segundo`));
 
     //PROCESSAMENTO
+    if (n1> n2 && n1> n3) { 
+        alert(`${n1} é o maior número`);
+    }
+    else if ( n2 > n1 && n2 > n3) {
+        alert(`${n2} é o maior número`);
+    }
+    else if ( n3 > n1 && n3 > n2) 
+    {
+        alert(`${n3} é o maior número`);
+    }
+    else 
+{
+    alert(`${n1} ${n2} e ${n3} são iguais`)
+}
 
 
     //SAÍDA
