@@ -1,11 +1,12 @@
 
 <script>
     const idade = Number(prompt(`informe sua idade`));
+    const titulo = prompt (`voce possui tirulo eleitoral? (S ou N)`).toUpperCase().trim();
     if (idade < 16) 
     {
         alert(`voce ainda não pode votar, voce tem ${2023 - idade}`);
     }
-    else(idade >= 16) 
+    else(idade >= 16 && titulo == "S")  
     {
         alert(`voce ja pode votar`);
     }

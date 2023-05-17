@@ -1,11 +1,9 @@
 <script>
-    const ano = Number(prompt(`informe seu ano de nascimento`));
-    if (ano <= 2005) {
-        alert(`voce ja atingiu a maioridade`);
+   const Nascimento = Number(prompt(`Me informe o ano e nascimento!`));
 
-    } else (ano > 2005)
-    {
-        alert(`voce ainda não atingiu  Maioridade, voce tem ${2023 - ano}`);
-
-    }
+   if (new Date().getFullYear() - Nascimento >= 18) {
+    alert(`maioridade atingida`)
+   } else {
+    alert(`você ainda é menor e idade`)
+   }
 </script>
