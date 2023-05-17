@@ -6,9 +6,21 @@
     //- Se a média for maior ou igual a 6: Aprovado
 
     //ENTRADA
-
+    const n1 = Number (prompt (`informe a nota do primeiro trimestre`));
+    const n2 = Number ( prompt(`informe a nota do segundo trimestre`));
+    const n3 = Number ( prompt (`informe a nota do terceiro trimestre`));
+    const conta = (n1+n2+n3)/3
 
     //PROCESSAMENTO
+    if (conta<4) {
+        alert(`você foi reprovado`);
+    }
+    else if (conta>=4<6) {
+        alert(`exame`);
+    }
+    else if (conta>=6) {
+        alert(`você foi aprovado`);
+    }
 
 
     //SAÍDA
